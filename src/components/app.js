@@ -7,17 +7,15 @@ let App = React.createClass({
  	getInitialState: function(){
  		return {
  			counter : 0,
- 			isCounterHidden: false
+ 			isCounterHidden: true
  		}
  	},
 
  	toggleCounter : function(){
- 		console.log(this.state.isCounterHidden);
- 		this.setState({
+  		this.setState({
  			isCounterHidden: !this.state.isCounterHidden
  		});
- 		console.log(this.state.isCounterHidden);
-
+ 
  	},
 
  	incrementCounter : function(){
